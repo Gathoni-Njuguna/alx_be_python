@@ -7,11 +7,11 @@ time_bound = input("Is it time-bound? (yes/no): ").lower()
 # Process task based on priority
 match priority:
     case "high":
-        reminder = f"High priority task: {task}"
+        reminder = f"Reminder: {task} is a {priority} priority task"
     case "medium":
         reminder = f"Medium priority task: {task}"
     case "low":
-        reminder = f"Low priority task: {task}"
+        reminder = f"Reminder: {task} is a {priority} priority task."
     case _:
         reminder = f"Task: {task} (priority not specified)"
 
