@@ -1,16 +1,12 @@
 def safe_divide(numerator, denominator):
     try:
-        result = numerator/denominator
-        print(result)
+        num = float(numerator)
+        denom = float(denominator)
+        
+        # Perform division
+        result = num / denom
+        return (True, result)
     except ZeroDivisionError:
-    # Code to run if a ZeroDivisionError occurs
-        print("Cannot divide by zero!")
+        return (False, "Error: Cannot divide by zero!")
     except ValueError:
-    # Code to run if a ValueError occurs
-        print("Invalid input")
-    except:
-    # Code to run if any other error occurs
-        print("An unexpected error occurred")
-    finally:
-    # Code to run regardless of whether an exception occurred
-        print("This will always execute")
+        return (False, "Error: Both inputs must be numeric!")
