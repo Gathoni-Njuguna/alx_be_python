@@ -1,5 +1,6 @@
 class Calculator:
     calculation_type = "Arithmetic Operations"
+    
     @staticmethod
     def add(a,b):
         return a + b
@@ -8,6 +9,6 @@ class Calculator:
         cls.a= a
         cls.b = b
         print(f"Calculation type: {cls.calculation_type}")
-        return cls.a * cls.b
+        return a * b
     
         
