@@ -8,7 +8,7 @@ class Rectangle(Shape):
         super().__init__(area)
         self.length = length
         self.width = width
-        area = length * width
+        area = self.length * self.width
 class Circle(Shape):
     def __init__(self, area,radius):
         super().__init__(area)
