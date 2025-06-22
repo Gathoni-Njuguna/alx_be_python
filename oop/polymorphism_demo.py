@@ -4,7 +4,7 @@ class Shape:
         self.area = area
         raise NotImplementedError
 class Rectangle(Shape):
-    def __init__(self, length,width):
+    def __init__(self,area, length, width):
         super().__init__(area)
         self.length = length
         self.width = width
