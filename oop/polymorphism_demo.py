@@ -2,17 +2,20 @@ import math
 class Shape:
     def __init__(self, area):
         self.area = area
-        raise NotImplementedError
+        raise NotImplementedError()
 class Rectangle(Shape):
-    def __init__(self,area, length, width):
-        super().__init__(area)
+    def __init__(self,length, width):
+        
         self.length = length
         self.width = width
-        area = self.length * self.width
+        
+    def area(self):
+        return self.length * self.width
 class Circle(Shape):
-    def __init__(self, area,radius):
-        super().__init__(area)
+    def __init__(self, radius):
+        
         self.radius = radius
-        area =math.pi ** 2
+    def area(self):
+        return math.pi ** 2
 
 
