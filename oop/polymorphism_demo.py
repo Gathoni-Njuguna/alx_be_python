@@ -13,6 +13,6 @@ class Circle(Shape):
     def __init__(self, area,radius):
         super().__init__(area)
         self.radius = radius
-        area = pow(math.pi,radius)
+        area = pow(math.pi ** radius)
 
 
